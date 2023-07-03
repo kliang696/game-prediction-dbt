@@ -1,0 +1,9 @@
+version: '1.0.0'
+
+sources:
+  - name: game_stats
+    project: game-prediction-386900
+    dataset: daily_game_stats
+    tables:
+      - name: game_info_part1
+      - name: rank_info_part1
