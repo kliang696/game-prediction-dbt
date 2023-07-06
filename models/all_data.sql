@@ -15,7 +15,7 @@ game_info AS (
 SELECT
     r.summonerName,r.summonerId,r.tier,r.rank, r.leaguePoints,
     g.championName,g.individualPosition,g.goldEarned,g.totalMinionsKilled,g.kills,g.deaths,g.assists,g.item0,
-    g.item1,g.item2,g.item3,g.item4,g.item5,g.item6,g.perks,g.win
+    g.item1,g.item2,g.item3,g.item4,g.item5,g.item6,g.Rune,g.win
 FROM rank_info AS r
-INNER JOIN game_info AS g
+INNER JOIN {{ ref("rune") }}  AS g
 ON r.summonerId = g.summonerId

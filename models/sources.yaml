@@ -7,4 +7,6 @@ sources:
     tables:
       - name: game_info
       - name: rank_info
+      - name: item_list
+      - name: rune_list
  
